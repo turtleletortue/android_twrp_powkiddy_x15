@@ -1,5 +1,5 @@
 #Device path
-DEVICE_PATH := device/powkiddy/x15
+DEVICE_PATH := device/powkiddy/h56_mt8163_60_n
 
 
 # Bootloader
@@ -26,7 +26,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/powkiddy/x15/kernel
+TARGET_PREBUILT_KERNEL := device/powkiddy/h56_mt8163_60_n/kernel
 BOARD_MTK_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE := "bootopt=64S3,32N2,64N2"
 BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x0df88000 --cmdline $(BOARD_KERNEL_CMDLINE)

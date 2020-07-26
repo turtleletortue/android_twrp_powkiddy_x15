@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/x15.mk
+    $(LOCAL_DIR)/full_h56_mt8163_60_n.mk
