@@ -10,7 +10,7 @@ TARGET_BOOTLOADER_BOARD_NAME := vWD200101
 TARGET_BOARD_PLATFORM := mt8163
 #mt8163b
 # For Mediatek Boot Image Headers
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/bootimg.mk
 
 # Architecture
 TARGET_ARCH := arm64
