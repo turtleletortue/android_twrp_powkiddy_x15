@@ -1,5 +1,5 @@
 #Device path
-DEVICE_PATH := device/powkiddy/h56_mt8163_60_n
+DEVICE_PATH := device/powkiddy/x15
 
 
 # Bootloader
@@ -29,7 +29,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/powkiddy/h56_mt8163_60_n/kernel
+TARGET_PREBUILT_KERNEL := device/powkiddy/x15/kernel
 BOARD_KERNEL_CMDLINE := "bootopt=64S3,32N2,64N2"
 BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x05f88000 --second_offset 0x00f00000 --tags_offset 0x0df88000 --cmdline "bootopt=64S3,32N2,64N2" --board "vWD200101"
 #Mediatek flags
@@ -94,8 +94,8 @@ TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_NO_USB_STORAGE := false
 
 # Logs
-TARGET_USES_LOGD := true
-TWRP_INCLUDE_LOGCAT := true
+#TARGET_USES_LOGD := true
+#TWRP_INCLUDE_LOGCAT := true
 
 # Exclude APP
 TW_EXCLUDE_TWRPAPP := true
@@ -104,7 +104,7 @@ TW_EXCLUDE_TWRPAPP := true
 TW_BACKUP_DATA_MEDIA := true
 
 #Recovery.fstab
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/twrp.fstab
 
 #Touchscreen fix
 #RECOVERY_TOUCHSCREEN_FLIP_Y := true
